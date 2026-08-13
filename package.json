@@ -1,0 +1,15 @@
+{
+    "name": "vehicle-recall-tracker",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Search official NHTSA safety recalls by vehicle make, model, and model-year range.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}

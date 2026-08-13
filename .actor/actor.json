@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "vehicle-recall-tracker",
+    "title": "Vehicle Recall Tracker — NHTSA Safety Recalls by Make/Model",
+    "description": "Search official NHTSA safety recalls for a specific vehicle make, model, and model-year range. Get the campaign number, component, defect summary, consequence, and free remedy for each recall. For dealers, fleet managers, and shoppers checking a vehicle's safety history.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of Vehicle Recall Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Recalls",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

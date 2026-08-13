@@ -1,0 +1,47 @@
+{
+    "title": "Vehicle Recall Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "make": {
+            "title": "Make",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Vehicle manufacturer, e.g. \"Honda\", \"Ford\", \"Toyota\". Matches NHTSA's make spelling; not case-sensitive."
+        },
+        "model": {
+            "title": "Model",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Vehicle model, e.g. \"Accord\", \"Explorer\", \"Camry\". Matches NHTSA's model spelling; not case-sensitive."
+        },
+        "yearFrom": {
+            "title": "Model year from",
+            "type": "integer",
+            "editor": "number",
+            "description": "Earliest model year to search (inclusive).",
+            "default": 2018,
+            "minimum": 1990,
+            "maximum": 2027
+        },
+        "yearTo": {
+            "title": "Model year to",
+            "type": "integer",
+            "editor": "number",
+            "description": "Latest model year to search (inclusive). Must be within 15 years of \"Model year from\" — NHTSA charges one API call per model year searched.",
+            "default": 2026,
+            "minimum": 1990,
+            "maximum": 2027
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of recalls to return, most recent first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 200
+        }
+    },
+    "required": ["make", "model"]
+}
