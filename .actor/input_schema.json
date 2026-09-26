@@ -7,13 +7,17 @@
             "title": "Make",
             "type": "string",
             "editor": "textfield",
-            "description": "Vehicle manufacturer, e.g. \"Honda\", \"Ford\", \"Toyota\". Matches NHTSA's make spelling; not case-sensitive."
+            "description": "Vehicle manufacturer, e.g. \"Honda\", \"Ford\", \"Toyota\". Matches NHTSA's make spelling; not case-sensitive.",
+            "prefill": "Honda",
+            "default": "Honda"
         },
         "model": {
             "title": "Model",
             "type": "string",
             "editor": "textfield",
-            "description": "Vehicle model, e.g. \"Accord\", \"Explorer\", \"Camry\". Matches NHTSA's model spelling; not case-sensitive."
+            "description": "Vehicle model, e.g. \"Accord\", \"Explorer\", \"Camry\". Matches NHTSA's model spelling; not case-sensitive.",
+            "prefill": "Accord",
+            "default": "Accord"
         },
         "yearFrom": {
             "title": "Model year from",
