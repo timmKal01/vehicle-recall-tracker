@@ -1,0 +1,78 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "campaignNumber",
+                    "modelYear",
+                    "make",
+                    "model",
+                    "component",
+                    "summary",
+                    "consequence",
+                    "remedy",
+                    "reportReceivedDate",
+                    "parkIt",
+                    "parkOutside",
+                    "overTheAirUpdate"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "campaignNumber": {
+                        "label": "Campaign number",
+                        "format": "text"
+                    },
+                    "modelYear": {
+                        "label": "Model year",
+                        "format": "text"
+                    },
+                    "make": {
+                        "label": "Make",
+                        "format": "text"
+                    },
+                    "model": {
+                        "label": "Model",
+                        "format": "text"
+                    },
+                    "component": {
+                        "label": "Component",
+                        "format": "text"
+                    },
+                    "summary": {
+                        "label": "Summary",
+                        "format": "text"
+                    },
+                    "consequence": {
+                        "label": "Consequence",
+                        "format": "text"
+                    },
+                    "remedy": {
+                        "label": "Remedy",
+                        "format": "text"
+                    },
+                    "reportReceivedDate": {
+                        "label": "Report received date",
+                        "format": "text"
+                    },
+                    "parkIt": {
+                        "label": "Park it",
+                        "format": "boolean"
+                    },
+                    "parkOutside": {
+                        "label": "Park outside",
+                        "format": "boolean"
+                    },
+                    "overTheAirUpdate": {
+                        "label": "Over the air update",
+                        "format": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}
